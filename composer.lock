@@ -4,8 +4,51 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c80be52ff57de512724ae1e24b7c41d5",
+    "content-hash": "6f0c26f65ca164375f30b61eb368102d",
     "packages": [
+        {
+            "name": "caouecs/laravel-lang",
+            "version": "4.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/caouecs/Laravel-lang.git",
+                "reference": "07e56beaceecd9da61a2c044be3dee7649f109e0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/caouecs/Laravel-lang/zipball/07e56beaceecd9da61a2c044be3dee7649f109e0",
+                "reference": "07e56beaceecd9da61a2c044be3dee7649f109e0",
+                "shasum": ""
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.10"
+            },
+            "suggest": {
+                "ablunier/laravel-lang-installer": "Command for easily add languages to a Laravel project",
+                "andrey-helldar/laravel-lang-publisher": "Easy installation and update of translation files for your project",
+                "arcanedev/laravel-lang": "Translations manager and checker for Laravel 5",
+                "overtrue/laravel-lang": "Command to add languages in your project"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "caouecs",
+                    "email": "caouecs@caouecs.net"
+                }
+            ],
+            "description": "Languages for Laravel",
+            "keywords": [
+                "lang",
+                "languages",
+                "laravel",
+                "lpm"
+            ],
+            "time": "2019-10-07T17:29:59+00:00"
+        },
         {
             "name": "dnoegel/php-xdg-base-dir",
             "version": "0.1",
@@ -679,16 +722,16 @@
         },
         {
             "name": "laravel/ui",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/ui.git",
-                "reference": "311219ce77022000745403bf95c4585cbad101a0"
+                "reference": "57e2361b55ed1bc80ff0b3258b9713626fb38a2b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/ui/zipball/311219ce77022000745403bf95c4585cbad101a0",
-                "reference": "311219ce77022000745403bf95c4585cbad101a0",
+                "url": "https://api.github.com/repos/laravel/ui/zipball/57e2361b55ed1bc80ff0b3258b9713626fb38a2b",
+                "reference": "57e2361b55ed1bc80ff0b3258b9713626fb38a2b",
                 "shasum": ""
             },
             "require": {
@@ -732,7 +775,7 @@
                 "laravel",
                 "ui"
             ],
-            "time": "2019-10-08T13:19:35+00:00"
+            "time": "2019-10-11T12:16:52+00:00"
         },
         {
             "name": "league/flysystem",

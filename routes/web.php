@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+ //   return view('');
+//});
+
+Route::view('/', 'applicants')->name('applicants');
+Route::post('/', 'ApplicantsController@store');
+Route::view('emails/confirm', 'confirm')->name('confirm');
