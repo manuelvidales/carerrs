@@ -76,7 +76,7 @@ class ApplicantsController extends Controller
         $datos->resume = 'applicants/'.$filename;
         $datos->save();
         //dd($datos);
-        Mail::to('sistemas01@autofleteshalcon.com')->send(new MessageReceived($datos));
+        Mail::to('applicants@sitioweb.com')->send(new MessageReceived($datos));
 
         return redirect('/')->with('info','Informacion enviada con exito!');
 
