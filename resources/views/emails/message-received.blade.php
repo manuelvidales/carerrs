@@ -23,11 +23,11 @@
 			<div class="card-body">
 			<div class="alert alert-success">
 			 <h4 class="alert-heading">Contenido de Mensaje!</h4>
-			<p><strong>Recibiste un Mesaje de:</strong> {{$msg['name']}} - <strong>{{$msg['email']}}</strong></p>
+			<p><strong>Recibiste un Mesaje de:</strong> {{$msg['name']}} - Correo: <strong>{{$msg['email']}}</strong></p>
 			<p><strong>Celular:</strong> {{ $msg['mobile']}}</p>
 			<p><strong>Telefono:</strong> {{ $msg['phone']}}</p>
 			<hr>
-			<p class="mb-0"><strong>Archivo:</strong> <a href="http://jobs.test:8000/storage/{{ $msg['resume']}}">Descargar Documento</a></p>
+			<p class="mb-0"><strong>Archivo:</strong> <a href="http://192.168.1.220:8082/storage/{{ $msg['resume']}}">Descargar Documento</a></p>
 			</div>
 		</div>
 	</div>
