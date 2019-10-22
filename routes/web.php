@@ -15,6 +15,18 @@
  //   return view('');
 //});
 
-Route::view('/', 'applicants')->name('applicants');
-Route::post('/', 'ApplicantsController@store');
-Route::view('emails/confirm', 'confirm')->name('confirm');
+Route::view('/', 'welcome')->name('welcome');
+Route::view('/applicants', 'applicants')->name('applicants');
+Route::post('/applicants', 'ApplicantsController@store');
+//Route::view('/vendor/mail/html/message', 'message')->name('message');
+//Route::view('/vendor/mail/html/transfer', 'transfer')->name('transfer');
+
+
+//Route::view('/applicants', 'applicants')->name('applicants');
+//Route::post('/applicants', 'ApplicantsController@store');
+//Route::view('emails/confirm', 'confirm')->name('confirm');
+
+//Route::view('/emails/message-received', 'message-received')->name('message-received');
+//Route::view('/emails/sendmail', 'sendmail')->name('sendmail');
+
+//Route::view('/vendor/mail/html/message', 'message')->name('message');

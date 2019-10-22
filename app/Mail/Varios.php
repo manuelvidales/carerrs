@@ -7,13 +7,12 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class MessageReceived extends Mailable
+class Varios extends Mailable
 {
     use Queueable, SerializesModels;
 
     public $subject = 'Mensaje recibido';
-    public $msg; //se declara la variable como publica para que este disponible en la vista
-
+    public $msg; 
     /**
      * Create a new message instance.
      *
@@ -21,7 +20,6 @@ class MessageReceived extends Mailable
      */
     public function __construct($datos)
     {
-        //Recibe la informacion guardada en la variable del Controlador
         $this->msg = $datos;
     }
 
@@ -32,7 +30,6 @@ class MessageReceived extends Mailable
      */
     public function build()
     {
-        //solo pruebas
-        //return $this->view('emails.message-received');
+        return $this->markdown('vendor.mail.html.varios');
     }
 }

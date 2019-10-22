@@ -15,11 +15,15 @@ class CreateApplicantsTable extends Migration
     {
         Schema::create('applicants', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name');
-            $table->string('email');
-            $table->string('mobile');
-            $table->string('phone');
-            $table->string('resume');
+            $table->string('name', 100);
+            $table->string('email', 60);
+            $table->string('mobile', 12);
+            $table->string('phone', 12)->nullable();
+            $table->string('visa', 5)->nullable();
+            $table->string('licfed', 5)->nullable();
+            $table->string('resume', 191)->nullable();
+            $table->string('perfil', 191);
+            $table->string('opcion', 10);
             $table->timestamps();
         });
     }
