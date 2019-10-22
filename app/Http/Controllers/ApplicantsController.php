@@ -87,7 +87,7 @@ class ApplicantsController extends Controller
         $datos->perfil = $request->perfil;
         $datos->opcion = $request->opcion;
         $datos->save();
-        Mail::to('sistemas@autofleteshalcon.com')->send(new TransferB1($datos));
+        Mail::to('rh@autofleteshalcon.com')->send(new TransferB1($datos));
         return back()->with('info','Informacion enviada con exito!');
         }
         else{
@@ -106,7 +106,7 @@ class ApplicantsController extends Controller
         $datos->opcion = $request->opcion;
         $datos->save();
         }
-        Mail::to('sistemas@autofleteshalcon.com')->send(new TransferB1($datos));        
+        Mail::to('rh@autofleteshalcon.com')->send(new TransferB1($datos));        
         return back()->with('info','Informacion enviada con exito!');
     break;
 
@@ -147,7 +147,7 @@ class ApplicantsController extends Controller
         $datos->opcion = $request->opcion;
         $datos->save();
         //dd($datos);
-        Mail::to('sistemas01@autofleteshalcon.com')->send(new varios($datos));
+        Mail::to('rh@autofleteshalcon.com')->send(new varios($datos));
         return back()->with('info','Informacion enviada con exito!');
         }
         else{
@@ -165,7 +165,7 @@ class ApplicantsController extends Controller
         $datos->opcion = $request->opcion;
         $datos->save();
         }
-        Mail::to('sistemas01@autofleteshalcon.com')->send(new varios($datos));        
+        Mail::to('rh@autofleteshalcon.com')->send(new varios($datos));        
         return back()->with('info','Informacion enviada con exito!');        
     break;
     }
