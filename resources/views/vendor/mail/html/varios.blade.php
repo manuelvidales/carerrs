@@ -36,7 +36,7 @@ ___Cuenta con:___
 @if ($msg['resume'] == 'null')
  ***No se anexaron documentos***
 @else
- **[Descargar documento](http://localhost:8000/jobs/public/storage/{{$msg['resume']}})**   
+ **[Descargar documento](http://192.168.1.220:8082/public/storage/{{$msg['resume']}})**   
 @endif
 
     {{-- Subcopy --}}
