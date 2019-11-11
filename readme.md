@@ -1,4 +1,4 @@
-<p align="center"><img src="https://i.ibb.co/xg4LTnP/carrers.png" width="400"></p>
+<p align="center"><img src="https://i.ibb.co/xg4LTnP/carrers.png" width="600"></p>
 
 ## Descripcion
 
