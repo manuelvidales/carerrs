@@ -1,13 +1,6 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+<p align="center"><img src="https://ibb.co/WzT5Jrq" width="400"></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
-
-## About 
+## Descripcion
 
 4 formularios para recibir informacion de candidatos a operadores de unidades de transporte, dando la opcion de seleccionar el perfil que buscan aplicar siendo los siguientes:
 
@@ -18,7 +11,7 @@
 
 Se integra dentro de la Pagina oficial de la empresa com seccion de "Ofertas de Empledo".
 
-## Learning 
+## Conocimiento 
 
 La informacion llenada se Verifican los campos desde el Controller siendo mostrada en caso que no cumplan con los campos requeridos.
 En la opcion de Archivo se Verifica que cumplan el Formato: **.pdf, .doc. docx.**
