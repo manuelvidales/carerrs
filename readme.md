@@ -1,4 +1,5 @@
-<p align="center"><img src="https://i.ibb.co/xg4LTnP/carrers.png" width="600"></p>
+<p align="center"><img src="https://i.ibb.co/xg4LTnP/carrers.png" width="650"></p>
+<p align="center"><img src="https://i.ibb.co/5Bvn7wp/correo.png" width="450"></p>
 
 ## Descripcion
 
@@ -9,7 +10,7 @@
 - Movimientos Locales.
 - Corto - Foraneo.  
 
-Se integra dentro de la Pagina oficial de la empresa com seccion de "Ofertas de Empledo".
+Se integra dentro de la Pagina oficial de la empresa como seccion de "Bolsa de Trabajo".
 
 ## Conocimiento 
 
