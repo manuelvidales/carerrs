@@ -25,6 +25,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
+           {!! NoCaptcha::renderJs() !!}
     </head>
     <body>
 <br>
@@ -162,7 +163,13 @@
             <div>
             <label style="color:red">{!! $errors->first('resume', '<small>:message</small><br>') !!}</label>
             </div>
-            <div class="form-group">(*)Los campos son requeridos</div>
+            <div class="form-group row">
+            <div class="col-md-6 col-md-6 offset-md-4">
+        {!! NoCaptcha::display() !!} 
+        <label style="color:red">{!! $errors->first('g-recaptcha-response', '<small>:message</small><br>') !!}</label>
+            </div>
+            </div>
+        <div class="form-group">(*)Los campos son requeridos</div>
             <div class="justify-content-end">
             <button type="submit" class="btn btn-success btn-lg btn-block"> <strong>Enviar</strong> </button>
             </div>
@@ -227,17 +234,23 @@
     </div>
 </div>
 </div>
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroupFileAddon01">Archivo</span>
-                </div>
-                <div class="custom-file">
-                 <input type="file" name="resume" class="custom-file-input" id="customFile">
-                 <label class="custom-file-label" for="customFile">Opcional: puede anexar su curriculum</label>
-                 </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroupFileAddon01">Archivo</span>
             </div>
+            <div class="custom-file">
+             <input type="file" name="resume" class="custom-file-input" id="customFile">
+             <label class="custom-file-label" for="customFile">Opcional: puede anexar su curriculum</label>
+        </div>
+        </div>
             <div>
             <label style="color:red">{!! $errors->first('resume', '<small>:message</small><br>') !!}</label>
+        </div>
+        <div class="form-group row">
+            <div class="col-md-6 col-md-6 offset-md-4">
+        {!! NoCaptcha::display() !!} 
+        <label style="color:red">{!! $errors->first('g-recaptcha-response', '<small>:message</small><br>') !!}</label>
+        </div>
         </div>
         <div class="form-group">(*)Los campos son requeridos</div>
             <div class="justify-content-end">
@@ -314,6 +327,12 @@
             </div>
             <div>
             <label style="color:red">{!! $errors->first('resume', '<small>:message</small><br>') !!}</label>
+        </div>
+        <div class="form-group row">
+            <div class="col-md-6 col-md-6 offset-md-4">
+        {!! NoCaptcha::display() !!} 
+        <label style="color:red">{!! $errors->first('g-recaptcha-response', '<small>:message</small><br>') !!}</label>
+        </div>
         </div>
         <div class="form-group">(*)Los campos son requeridos</div>
             <div class="justify-content-end">
@@ -392,6 +411,12 @@
             </div>
             <div>
             <label style="color:red">{!! $errors->first('resume', '<small>:message</small><br>') !!}</label>
+        </div>
+        <div class="form-group row">
+        <div class="col-md-6 col-md-6 offset-md-4">
+        {!! NoCaptcha::display() !!} 
+        <label style="color:red">{!! $errors->first('g-recaptcha-response', '<small>:message</small><br>') !!}</label>
+        </div>
         </div>
         <div class="form-group">(*)Los campos son requeridos</div>
             <div class="justify-content-end">

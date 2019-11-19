@@ -57,7 +57,8 @@ class ApplicantsController extends Controller
         'mobile' => 'required|numeric',
         'visa' => 'required',
         'licfed' => 'required',
-        'resume' => 'file|mimes:pdf,doc,docx,|max:3072'],
+        'resume' => 'file|mimes:pdf,doc,docx,|max:3072',
+        'g-recaptcha-response' => 'required|captcha'],
         [
             'mobile.numeric' => 'Debe ser numerico/No incluir espacios o simbolos',
             'visa.required' => 'Debe seleccionar una opcion',
@@ -87,7 +88,7 @@ class ApplicantsController extends Controller
         $datos->perfil = $request->perfil;
         $datos->opcion = $request->opcion;
         $datos->save();
-        Mail::to('rh@autofleteshalcon.com')->send(new TransferB1($datos));
+        Mail::to('infomax@autofleteshalcon.com')->send(new TransferB1($datos));
         return back()->with('info','Informacion enviada con exito!');
         }
         else{
@@ -106,7 +107,7 @@ class ApplicantsController extends Controller
         $datos->opcion = $request->opcion;
         $datos->save();
         }
-        Mail::to('rh@autofleteshalcon.com')->send(new TransferB1($datos));        
+        Mail::to('infomax@autofleteshalcon.com')->send(new TransferB1($datos));        
         return back()->with('info','Informacion enviada con exito!');
     break;
 
@@ -119,7 +120,8 @@ class ApplicantsController extends Controller
         'email' => 'required|email',
         'mobile' => 'required|numeric',
         'licfed' => 'required',
-        'resume' => 'file|mimes:pdf,doc,docx,|max:3072'],
+        'resume' => 'file|mimes:pdf,doc,docx,|max:3072',
+        'g-recaptcha-response' => 'required|captcha'],
         [
             'mobile.numeric' => 'Debe ser numerico/No incluir espacios o simbolos',
             'licfed.required' => 'Debe seleccionar una opcion',
@@ -147,7 +149,7 @@ class ApplicantsController extends Controller
         $datos->opcion = $request->opcion;
         $datos->save();
         //dd($datos);
-        Mail::to('rh@autofleteshalcon.com')->send(new varios($datos));
+        Mail::to('infomax@autofleteshalcon.com')->send(new varios($datos));
         return back()->with('info','Informacion enviada con exito!');
         }
         else{
@@ -165,7 +167,7 @@ class ApplicantsController extends Controller
         $datos->opcion = $request->opcion;
         $datos->save();
         }
-        Mail::to('rh@autofleteshalcon.com')->send(new varios($datos));        
+        Mail::to('infomax@autofleteshalcon.com')->send(new varios($datos));        
         return back()->with('info','Informacion enviada con exito!');        
     break;
     }
