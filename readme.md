@@ -1,4 +1,4 @@
-<p align="center"><img src="https://i.ibb.co/xg4LTnP/carrers.png" width="650"></p>
+<p align="center"><img src="https://i.ibb.co/8grQgVQ/jobs.png" width="650"></p>
 <p align="center"><img src="https://i.ibb.co/5Bvn7wp/correo.png" width="450"></p>
 
 ## Descripcion
