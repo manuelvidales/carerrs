@@ -14,20 +14,21 @@ Se integra dentro de la Pagina oficial de la empresa como seccion de "Bolsa de T
 
 ## Conocimiento 
 
-La informacion llenada se Verifican los campos desde el Controller siendo mostrada en caso que no cumplan con los campos requeridos.
+La informacion que se ingresa, pasa por un proceso de Verificacion de campos desde el Controller y devuelve alertas visuales al Cumplir o de No cumplir con alguno segun aplique.
 En la opcion de Archivo se Verifica que cumplan el Formato: **.pdf, .doc. docx.**
 
 Posteriormente se revisa que existan un archivo en el formulario y se pasan por variables para almacenamiento en un directorio especifico y se le Asigna un Nombre Inicial (document-), con un final aleatorio deacuerdo a la hora enviada.
 
 enseguida se envian los datos a la Tabla de la Base de Datos  y se guardan con la ruta del archivo almacenado.
 
-Despues se envia la informacion por Correo, usando el controller de Mail y se pasa por una plantilla echa en Markdown personalizada en CSS aplicando la libreria de Laravel-mail
+Despues se envia la informacion por Correo, usando el controller de Mail y se pasa por una plantilla echa en Markdown personalizada en CSS aplicando la libreria de Laravel-mail.
 
 Se agregaron los siguientes paquetes dentro del proyecto:
 
 - [Laravel SendGrid Driver](https://github.com/s-ichikawa/laravel-sendgrid-driver)
 - [Lenguajes para traducir 4.0](https://github.com/caouecs/Laravel-lang)
 - [Markdown Personalizado ](https://laravel.com/docs/6.x/notifications#customizing-the-components)
+- [NoCAPTCHA reCAPTCHA ](https://github.com/anhskohbo/no-captcha)
 
 
 ## Install
