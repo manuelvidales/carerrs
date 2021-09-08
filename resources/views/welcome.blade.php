@@ -88,7 +88,7 @@
     <div class="row justify-content-center">
         <div class="col-md-10">
             <div class="card">
-            <div class="card-header" style="text-align: center"><h2>5TA. RUEDA - TRANFER / B1</h2></div>
+            <div class="card-header" style="text-align: center"><h2>5TA. RUEDA - TRANSFER / B1</h2></div>
                 <div class="card-body">
 
         <form method="POST" action="{{ route('applicants') }}" enctype="multipart/form-data" file="true">
